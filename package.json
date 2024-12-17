@@ -1,0 +1,17 @@
+{
+  "name": "cloudflare-pages-pure-template",
+  "version": "1.0.0",
+  "author": "vhvy",
+  "private": true,
+  "main": "src/index.ts",
+  "scripts": {
+    "dev": "wrangler pages dev public",
+    "cf-typegen": "wrangler types --experimental-include-runtime",
+    "postinstall": "npm run cf-typegen"
+  },
+  "devDependencies": {
+    "typescript": "latest",
+    "wrangler": "latest"
+  },
+  "license": "MIT"
+}
